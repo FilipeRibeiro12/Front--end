@@ -1,0 +1,28 @@
+textarea.form-control,
+#nome,
+#email{
+    width: 100% !important;
+}
+
+.container{
+    background-color: whitesmoke;
+}
+
+#botao{
+    margin: 0 !important;
+}
+
+a,
+a.nav-link{
+    color: darkblue;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: darkblue;
+    background-color: whitesmoke;
+}

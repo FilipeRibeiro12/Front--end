@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/customcomponente.css">
+    
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container" id="menu">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#Sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#Produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#Contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="container" id="container">
+        
+        <!--Carousel-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ratio ratio-21x9">
+                        <img src="./imagens/pexels-mnz-1598505.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <a class="btn btn-light stretched-link">Call to action</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <img src="./imagens/pexels-mnz-1598508.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-truncate col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid expedita, delectus ex natus deleniti obcaecati. Eius quidem ratione minima laboriosam sit. Delectus optio voluptatem, animi saepe libero officiis dignissimos.</h5>
+                        <a class="btn btn-light stretched-link">Call to action</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <img src="./imagens/pexels-mstudio-1240892.jpg" class="d-block w-100 opacity-75" alt="...">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <div class="bg-dark clearfix bg-gradient opacity-75">
+
+        <a name="" id="" class="btn btn-link link-danger float-start" href="#" role="button">Link</a>
+        <a name="" id="" class="btn link-warning float-start" href="#" role="button">Link</a>
+        <a name="" id="" class="btn link-light float-start" href="#" role="button">Link</a>
+
+        <a name="" id="" class="btn btn-light float-end" href="#" role="button">Button</a>
+        <a name="" id="" class="btn btn-light float-end" href="#" role="button">Button</a>
+        </div>
+
+
+        <i class="fa-sharp fa-solid fa-wifi"></i>
+        <i class="fa-brands fa-square-facebook link-primary"></i>
+        <i class="fa fa-car fa-2x"></i>
+
+        <div class="list-group">
+            <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+            <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+            <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+            <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+          </div>
+    </div>
+    
+    
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f512b78a73.js" crossorigin="anonymous"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleAutoplaying')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000
+        })
+    </script>
+</body>
+
+<footer>
+    &copy;2023 Filipe Ribeiro - Todos os direitos reservados.
+    </html>

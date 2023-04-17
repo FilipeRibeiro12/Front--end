@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>jQuery</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo-harley" src="./images/harley-davidson-motor-cycles-vector-logo-2022.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>Ecommerce HTML Template</h2>
+                        <div class="line-dec"></div>
+                        <p>HTML Template can be converted into your desired CMS theme. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="featured" class="featured-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Destaques</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="./images/pexels-bruno-charlier-11959900.jpg" alt="Item 1">
+                            <h4>Produto 1</h4>
+                            <h6>R$ 70.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-giorgio-de-angelis-1191109.jpg" alt="Item 2">
+                            <h4>Produto 2</h4>
+                            <h6>R$ 85.0000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-nishant-aneja-2393821.jpg" alt="Item 3">
+                            <h4>Produto 3</h4>
+                            <h6>R$ 75.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-norbert-norbi-5023257.jpg" alt="Item 4">
+                            <h4>Produto 4</h4>
+                            <h6>R$ 90.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-pixabay-258092.jpg" alt="Item 5">
+                            <h4>Produto 5</h4>
+                            <h6>R$ 100.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-valeria-boltneva-13336569.jpg" alt="Item 6">
+                            <h4>Produto 6</h4>
+                            <h6>R$ 95.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/pexels-nikita-khandelwal-819805.jpg" alt="Item 7">
+                            <h4>Produto 7</h4>
+                            <h6>R$ 88.000,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8 offset-md-2">
+        <div class="main-content">
+            <h2>Receba Novidades</h2>
+            <h6>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</h6>
+            <div class="container">
+                <form id="subscribe" class="form" method="get">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <fieldset>
+                                <input name="email" type="text" class="form-control" id="email" placeholder="Seu e-mail...">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-5">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="btn btn-dark">Inscreva-se</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="./images/harley-davidson-wings.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">How It Works ?</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>Harley Davidson &copy; Todos os direitos reservados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal trigger button
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          Launch
+        </button> -->
+        
+        <!-- Modal Body -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div id="contato" class="visually-hidden">
+            
+            <form action="" class="form">
+
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu Nome" aria-describedby="helpNome">
+                  <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                  </small>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div id="sobre" class="visually-hidden">
+
+            <p>Harley-Davidson é uma das marcas mais icônicas da indústria de motocicletas, fundada em 1903 em Milwaukee, Wisconsin, nos Estados Unidos. A empresa é conhecida por suas motocicletas de alta qualidade e estilo clássico, com um som de motor distintivo. Desde o seu início, a Harley-Davidson construiu uma comunidade fiel de proprietários e entusiastas, que se reúnem em eventos e passeios em todo o mundo. Além de sua linha de motocicletas, a empresa também oferece roupas e acessórios para motociclistas. A Harley-Davidson continua a ser uma das marcas mais reconhecidas e respeitadas na indústria de motocicletas, com uma história rica e uma base de fãs leais.</p>
+            
+        </div>
+
+        <script src="./vendor/jquery/jquery-3.6.4.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
+    </html>

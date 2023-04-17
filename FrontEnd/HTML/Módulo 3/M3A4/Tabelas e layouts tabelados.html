@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Tabelas</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Tabelas</h1>
+			<table border="1" width="100%"> <!-- tag table é utilizada para criar uma tabela -->
+											<!-- atributo border para criar uma borda para a tabela -->
+											<!-- atribtuto widht para mudar a largura da tabela -->
+			<thead> <!-- Cabeçalho da tabela -->
+			<tr>	<!-- tag tr usada para colocar linhas na tabela -->
+					<!-- tag th usada para colocar colunas de cabeçalhos (negrito) -->
+					<!-- tag td usada para colocar titúlo nas colunas -->
+				<th>Coluna 1</th>
+				<th>Coluna 2</th>
+				<th>Coluna 3</th>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">Descrição da tabela</td> <!-- colspan é um atributo usado para mesclar linhas -->
+																		<!-- align é o atributo usado para alinhar os itens na tabela -->
+			</tr>
+			</thead>	
+			<tbody> <!-- tag tbody é o corpo da tabela, tag opcional -->
+				<tr>
+					<td>1A</td>
+					<td>1B</td>
+					<td>1C</td>
+				</tr>
+				<tr>
+					<td>2A</td>
+					<td>2B</td>
+					<td>2C</td>
+					
+				</tr>
+				<tr>
+					<td>3A</td>
+					<td colspan="2">3BC</td>
+				</tr>
+			</tbody>
+			<tfoot><!-- tag tfoot utilizada para marcar rodapé da tabela -->
+				<tr>
+					<td colspan="3">Rodapé da tabela</td>
+				</tr>
+			</tfoot>
+		</table>
+		<h2>Tabela como layout</h2>
+		<table width="600">
+			<tr height="90"> <!-- height atributo usado para definir uma altura para a tabela -->
+				<td colspan="4" bgcolor="#BBCCEE" align="center">Cabeçalho</td> <!-- bgcolor é um atributo usado para colocar cor nas lihas -->
+			</tr>
+			<tr height="300">
+				<td width="20" bgcolor="#0000FF"></td>
+				<td width="60%" bgcolor="#DDDDDD">
+					<h2>Titulo</h2>
+					<p>qualquer texto dentro da tabela</p>
+				</td>
+				<td bgcolor="#EEEEEE">Coluna 2</td>
+				<td width="20" bgcolor="#0000FF"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+		</table>
+	</body>
+</html>

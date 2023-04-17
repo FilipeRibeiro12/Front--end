@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Filipe Ribeiro de Souza</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+		<section>
+			<nav>
+				<h3>Aulas</h3>
+				<ul>
+					<li><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de texto</a></li>
+					<li><a href="04-tabelas.htmls">Tabelass</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.instagram.com/filipe.ribeirosz/"target="_blank">@filipe.ribeirosz</a></li>
+					<li> <a href="https://www.linkedin.com/in/filipe-ribeiro-de-souza-505714213/"target="_blank">LinkedIn</a></li>
+				</ul>
+			</nav>
+			<article>
+				<img width="200" src="https://instagram.fbhz2-1.fna.fbcdn.net/v/t51.2885-19/136405684_4235121136505031_6987380954794684489_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fbhz2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=I5KFVY-Y7QYAX8FlUFM&tn=D1gwWN83-m8tpBRC&edm=ABmJApABAAAA&ccb=7-5&oh=00_AfDlmAMBoJXzwD0cLTbhZ8pr3dO01IudJ5Te1eN2UphXRQ&oe=636047A5&_nc_sid=6136e7" height="200" alt="FILIPE RIBEIRO DE SOUZA">
+				<h2>Filipe Ribeiro de Souza</h2>
+				<p>Aluno do curso de Desenvolvimento FullStack da <strong>EBAC</strong></p>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Filipe Ribeiro</p>
+		</footer>
+	</body>
+</html>

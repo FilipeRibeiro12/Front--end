@@ -1,0 +1,139 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: auto;
+	padding: auto;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 0.5rem;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+
+header {
+  background-color: rgb(12, 19, 11);
+  padding: 20px;
+  text-align: left;
+  font-size: 10px;
+  color: white;
+}
+
+nav {
+  /*background-color: tomato;*/
+  float: left; /*muda a regra de quebra de linha*/
+  width: 30%;
+  padding: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+article {
+  /*background-color: yellow;*/
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(15, 27, 12);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+.coluna{
+  display:block;
+  width:50%;
+  float:left;
+  padding:5px;
+  /*background:#eee;
+  border:1px solid #333;*/
+}
+
+.coluna-3{
+  columns: 100px 2;
+  width: 50%;
+}
+
+.coluna-100w{
+  width: 100%;
+}
+
+iframe{
+  width: 100%;
+}
+
+/*mobile first*/
+
+
+/*tablet*/
+@media (min-width:769px){
+  body{
+    background-color: teal;
+    color:#efff
+  }
+  p,h3,li,a{
+   color: #efff;
+  }
+}
+
+
+@media(max-width:768px){
+  nav{
+    width:30vw;
+  }
+  article{
+    width:50vw;
+    min-width:unset;
+  }
+}
+
+/*smartphone*/
+@media (max-width:425px){
+  nav,
+  article,
+  .coluna {
+    width: 100%;
+    min-width: 320px;
+  }
+}

@@ -1,0 +1,54 @@
+html{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:35px;
+}
+body{
+    font-size: 62.5%;
+}
+
+div{
+    margin: 40px auto;
+}
+/*cria um circulo*/
+#grafico-01{
+    background-color:rgb(3, 32, 3);
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#grafico-01 img{
+    width: 150%;
+    height: auto;
+    
+}
+
+/*triangulo*/   
+#grafico-02 {
+    background: transparent;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 200px;
+    
+}
+#imagem-vetorial{
+    width: 200px;
+}
+/*filtro*/
+#grafico-01{
+    filter:drop-shadow(8px 8px 10px rgb(27, 26, 26));
+    max-width:100%;
+}
+.filtro{
+    filter:grayscale(100%); /*escala de cinza*/
+    filter:blur(3px);/*desfoque*/
+    filter:brightness(200%);/*brilho 100% = normal*/
+    filter:invert(100%);/*negativo*/
+    filter:opacity(50%); /*opacidade*/
+    filter:saturate(200%) sepia(100%);/*combinar filtros = separar por espaço*/
+}
+.filtro:hover{
+    filter:grayscale(50%);
+    
+}
