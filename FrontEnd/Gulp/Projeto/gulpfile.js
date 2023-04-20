@@ -4,11 +4,12 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 
+
 function tarefasCSS(cb) {
     
     return gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css',
-        './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
+        './vendor/fontawesome/fontawesome.css',
         './vendor/owl/css/owl.css',
         './vendor/jquery-ui/jquery-ui.css',
         './src/css/style.css'
