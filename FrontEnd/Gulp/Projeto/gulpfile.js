@@ -3,7 +3,7 @@ const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-const image = require('gulp-image')
+const image = require('gulp-imagemin')
 
 
 function tarefasCSS(cb) {
@@ -56,4 +56,4 @@ function tarefasImagem(){
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
-exports.images = tarefasImagem
+exports.image = tarefasImagem
