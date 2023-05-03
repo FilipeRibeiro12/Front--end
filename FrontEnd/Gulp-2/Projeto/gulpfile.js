@@ -4,6 +4,7 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const image = require('gulp-imagemin')
+const htmlin = require('gulp-htmlmin')
 
 
 function tarefasCSS(cb) {
@@ -54,6 +55,18 @@ function tarefasImagem(){
         .pipe(gulp.dest('./dist/images'))
 }
 
+// POC - Proof of Concept
+function tarefasHTML(callback){
+
+    gulp.src('./src/**/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./dist'))
+
+    return callback()
+}
+
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.image = tarefasImagem
+exports.html = tarefasHTML
