@@ -1,41 +1,55 @@
+const {series, parallel} = require('gulp')
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const image = require('gulp-imagemin')
-const htmlin = require('gulp-htmlmin')
+const htmlimin = require('gulp-htmlmin')
+const babel = require('gulp-babel')
+const browserSync = require ('browser-sync').create()
+const reload = browserSync.reload
+
 
 
 function tarefasCSS(cb) {
     
-    return gulp.src([
+         gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css',
         './vendor/fontawesome/fontawesome.css',
         './vendor/owl/css/owl.css',
         './vendor/jquery-ui/jquery-ui.css',
         './src/css/style.css'
     ])
+       
         .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix:'.min'}))
         .pipe(gulp.dest('./dist/css'))
+
+    cb()    
 }
 
-function tarefasJS() {
+function tarefasJS(callback) {
 
-    return gulp.src([
+         gulp.src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/js/owl.js',
         './vendor/jquery-mask/jquery.mask.js',
-        './vendor/jquery-ui/jquery-ui.js',
+        //'./vendor/jquery-ui/jquery-ui.js',
         './src/js/custom.js'
     ])
+        .pipe(babel({
+            comments: false,
+            presets: ['@babel/env']
+    }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/js'))
+
+    return callback()    
 }
 
 function tarefasImagem(){
@@ -59,14 +73,28 @@ function tarefasImagem(){
 function tarefasHTML(callback){
 
     gulp.src('./src/**/*.html')
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlimin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./dist'))
 
     return callback()
 }
 
+gulp.task('server', function(){
+
+    browserSync.init({
+       server: {
+        baseDir: "./dist"
+       } 
+    })
+    gulp.watch('./src/**/*').on('change',process) //repete o processo de gulp
+    gulp.watch('./src/**/*').on('change',reload)
+})
+
+const process = series( tarefasHTML, tarefasJS, tarefasCSS,)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.image = tarefasImagem
-exports.html = tarefasHTML
+
+
+exports.default = process
