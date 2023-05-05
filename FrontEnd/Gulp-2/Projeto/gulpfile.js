@@ -90,7 +90,13 @@ gulp.task('server', function(){
     gulp.watch('./src/**/*').on('change',reload)
 })
 
-const process = series( tarefasHTML, tarefasJS, tarefasCSS,)
+function end(cb){
+    console.log("tarfas concluidas")
+    return cb()
+}
+
+// series x parallel
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
