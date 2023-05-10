@@ -1,0 +1,19 @@
+.destaque {
+    h1 {
+        color: $color-03;
+        font-size: $font-big;
+    }
+
+    h5 {
+        font-size: $font-small;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    p {
+        font-size: $font-normal;
+        color: $color-04s;
+    }
+}
