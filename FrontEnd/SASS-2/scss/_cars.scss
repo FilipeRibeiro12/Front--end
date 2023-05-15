@@ -1,0 +1,25 @@
+@mixin theme($theme: #EE5) {
+    border: 1px solid $theme;
+}
+
+.cars {
+    h2 {
+        color: $color-02;
+    }
+    .destaque {
+        @include theme;
+    }
+    li {
+        @include theme;
+        color: $color-04;
+        display: block;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+
+        a {
+            background-color: $color-default;
+        }
+    }
+}
