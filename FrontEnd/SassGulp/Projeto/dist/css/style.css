@@ -170,165 +170,136 @@ a {
   margin-top: 30px; }
   .owl-theme .owl-dots .owl-dot {
     outline: none; }
-
-.owl-theme .owl-dots .active span {
-  background-color: orangered !important; }
-
-.owl-theme .owl-dots .owl-dot span {
-  background-color: #aaa;
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  margin: 0px 5px;
-  outline: none; }
+    .owl-theme .owl-dots .owl-dot span {
+      background-color: #aaa;
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      margin: 0px 5px;
+      outline: none; }
+  .owl-theme .owl-dots .active span {
+    background-color: orangered !important; }
 
 /* Subscribe Style */
 .subscribe-form {
   background-color: orangered;
   padding: 80px 0px;
   text-align: center; }
-
-.subscribe-form .section-heading {
-  margin-top: 0px; }
-
-.subscribe-form .section-heading h1 {
-  color: #fff; }
-
-.subscribe-form .section-heading .line-dec {
-  background-color: #fff;
-  margin: 0 auto; }
-
-.subscribe-form .main-content p {
-  font-size: 17px;
-  color: #fff;
-  margin-bottom: 30px; }
-
-.subscribe-form .main-content form {
-  color: #fff;
-  display: inline; }
-
-.subscribe-form .main-content form input {
-  display: inline; }
-
-.subscribe-form .main-content form input {
-  width: 100%;
-  height: 46px;
-  border: 1px solid #fff;
-  background-color: transparent;
-  padding-left: 15px;
-  color: #fff;
-  outline: none; }
-
-.subscribe-form .main-content form button:focus {
-  color: #fff !important; }
-
-.subscribe-form .main-content form button {
-  width: 100%;
-  height: 45px;
-  cursor: pointer;
-  background-color: #fff;
-  outline: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  display: inline-block;
-  color: orangered;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.4px;
-  text-decoration: none;
-  transition: all 0.5s;
-  box-shadow: none;
-  border: none; }
+  .subscribe-form .section-heading {
+    margin-top: 0px; }
+    .subscribe-form .section-heading h1 {
+      color: #fff; }
+    .subscribe-form .section-heading .line-dec {
+      background-color: #fff;
+      margin: 0 auto; }
+  .subscribe-form .main-content p {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px; }
+  .subscribe-form .main-content form {
+    color: #fff;
+    display: inline; }
+    .subscribe-form .main-content form input {
+      display: inline;
+      width: 100%;
+      height: 46px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      padding-left: 15px;
+      color: #fff;
+      outline: none; }
+    .subscribe-form .main-content form button:focus {
+      color: #fff !important; }
+      .subscribe-form .main-content form button:focus button {
+        width: 100%;
+        height: 45px;
+        cursor: pointer;
+        background-color: #fff;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        display: inline-block;
+        color: orangered;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        transition: all 0.5s;
+        box-shadow: none;
+        border: none; }
 
 /* Footer Style */
 .footer {
   text-align: center; }
-
-.footer ul {
-  padding: 0px;
-  margin: 0px; }
-
-.footer ul li {
-  list-style: none;
-  display: inline-block; }
-
-.footer .logo img {
-  max-width: 100%; }
-
-.footer .footer-menu {
-  margin-bottom: 40px; }
-
-.footer .footer-menu ul li {
-  margin: 0px 15px; }
-
-.footer .footer-menu a {
-  font-size: 13px;
-  color: #7a7a7a;
-  text-transform: uppercase;
-  transition: all 0.5s; }
-
-.footer .footer-menu a:hover {
-  color: orangered;
-  text-decoration: none; }
-
-.footer .social-icons {
-  margin-bottom: 60px; }
-
-.footer .social-icons ul li {
-  margin: 0px 10px; }
-
-.footer .social-icons a {
-  width: 32px;
-  height: 32px;
-  color: #fff;
-  background-color: #aaa;
-  text-align: center;
-  display: inline-block;
-  line-height: 33px;
-  border-radius: 50%;
-  font-size: 13px;
-  transition: all 0.5s; }
-
-.footer .social-icons a:hover {
-  background-color: orangered; }
+  .footer ul {
+    padding: 0px;
+    margin: 0px; }
+    .footer ul li {
+      list-style: none;
+      display: inline-block; }
+  .footer .logo img {
+    max-width: 100%; }
+  .footer .footer-menu {
+    margin-bottom: 40px; }
+    .footer .footer-menu ul li {
+      margin: 0px 15px; }
+    .footer .footer-menu a {
+      font-size: 13px;
+      color: #7a7a7a;
+      text-transform: uppercase;
+      transition: all 0.5s; }
+      .footer .footer-menu a:hover {
+        color: orangered;
+        text-decoration: none; }
+  .footer .social-icons {
+    margin-bottom: 60px; }
+    .footer .social-icons ul li {
+      margin: 0px 10px; }
+    .footer .social-icons a {
+      width: 32px;
+      height: 32px;
+      color: #fff;
+      background-color: #aaa;
+      text-align: center;
+      display: inline-block;
+      line-height: 33px;
+      border-radius: 50%;
+      font-size: 13px;
+      transition: all 0.5s; }
+      .footer .social-icons a:hover {
+        background-color: orangered; }
 
 /* Sub Footer Style */
 .sub-footer {
   border-top: 1px solid #eee;
   text-align: center; }
-
-.sub-footer p {
-  font-size: 12px;
-  color: #7a7a7a;
-  line-height: 60px; }
-
-.sub-footer a {
-  color: orangered;
-  text-decoration: none; }
+  .sub-footer p {
+    font-size: 12px;
+    color: #7a7a7a;
+    line-height: 60px; }
+  .sub-footer a {
+    color: orangered;
+    text-decoration: none; }
 
 /* Featured Page Style */
 .featured-page {
   margin-top: 130px;
   margin-bottom: 40px; }
-
-.featured-page .section-heading {
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-.featured-page #filters {
-  margin-top: 15px;
-  text-align: right; }
+  .featured-page .section-heading {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .featured-page #filters {
+    margin-top: 15px;
+    text-align: right; }
 
 .featured .featured-item {
   margin-bottom: 30px;
   text-decoration: none; }
-
-.featured .featured-item h4 {
-  transition: all 0.5s; }
-
-.featured .featured-item:hover h4 {
-  color: oran; }
+  .featured .featured-item h4 {
+    transition: all 0.5s; }
+    .featured .featured-item h4:hover h4 {
+      color: oran; }
 
 #filter button {
   outline: none; }
@@ -374,44 +345,35 @@ a {
   border-top: 1px solid #eee;
   padding: 30px  0px 0px 0px;
   margin: 0px 0px 80px 0px; }
+  .page-navigation ul li {
+    display: inline-block; }
+    .page-navigation ul li a {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      text-align: center;
+      line-height: 38px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      font-weight: 700;
+      color: #1e1e1e;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.5s; }
 
-.page-navigation ul li {
-  display: inline-block; }
-
-.page-navigation ul li a {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 38px;
-  border: 1px solid #eee;
-  border-radius: 5px;
-  font-weight: 700;
-  color: #1e1e1e;
-  font-size: 15px;
-  text-decoration: none;
-  transition: all 0.5s; }
-
-.page-navigation ul li a:hover,
-.page-navigation ul li.current-page a {
-  background-color: #3a8bcd;
-  border-color: #3a8bcd;
-  color: #fff; }
-
+/*
+ *.page-navigation ul li a:hover,
+ *.page-navigation ul li.current-page a {
+    background-color: #3a8bcd;
+    border-color: #3a8bcd;
+    color: #fff;
+}
+ */
 /* Single Product Style */
 .single-product .product-slider {
   padding: 20px;
   border: 1px solid #eee !important;
   border-radius: 5px; }
-
-.flexslider {
-  border: none !important; }
-
-#carousel {
-  margin-top: 20px; }
-
-#carousel .slides li {
-  width: 150px !important; }
 
 .single-product .right-content h4 {
   font-size: 17px;
@@ -475,6 +437,14 @@ a {
   display: inline-block;
   margin-left: 8px;
   color: #aaa; }
+
+.flexslider {
+  border: none !important; }
+
+#carousel {
+  margin-top: 20px; }
+  #carousel .slides li {
+    width: 150px !important; }
 
 .single-product .right-content .down-content span a {
   color: #aaa;
