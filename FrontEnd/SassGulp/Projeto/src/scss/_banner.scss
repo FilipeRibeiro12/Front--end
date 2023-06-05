@@ -1,0 +1,34 @@
+/* Banner Style */
+.banner {
+    margin-top: 50px;
+    background-image: url(../images/pexels-julian-paolo-dayag-3621667.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 110px;
+    background-position: center center;
+    
+    .caption {
+        background-color: rgba(250,250,250,0.9);
+        padding: 30px;
+        max-width: 450px;
+        
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 700;
+            color: $color02;
+        }
+        
+        .line-dec {
+            width: 30px;
+            height: 5px;
+            background-color: $color01;
+        }
+        
+        p {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}

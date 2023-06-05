@@ -1,0 +1,63 @@
+/* Featured Style */
+.featured-items {
+    margin-bottom: 70px;
+}
+.featured-item {
+    border-radius: 5px;
+    border: 1px solid $color04;
+    padding: 20px;
+    transition: all 0.5s;
+    
+    &:hover {
+        opacity: 0.9;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    h4 {
+        font-size: 17px;
+        font-weight: 700;
+        color: $color02;
+        margin-top: 15px;
+        transition: all 0.5s;
+        
+        &:hover {
+            color: $color01;
+        }
+    }
+    
+    h6 {
+        color: $color01;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+}
+
+
+.owl-theme {
+    .owl-dots {
+        text-align: center;
+        margin-top: 30px;
+        
+        .owl-dot {
+            outline: none;
+            
+            span {
+                background-color: $color05;
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                margin: 0px 5px;
+                outline: none;
+            }
+            
+        }
+        .active span {
+            background-color: $color01!important;
+        }
+    }
+    
+} 
