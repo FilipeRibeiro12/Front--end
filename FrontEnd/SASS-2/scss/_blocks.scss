@@ -1,4 +1,13 @@
 %blocks {
+
+    /*
+        BEM CSS
+        - Block
+        - Element
+        - MOdifier
+     */
+
+
     padding: 3rem 0;
     h2 {
         color: $color-01;
@@ -7,9 +16,10 @@
     ul {
         list-style-type: none;
         font-size: $font-small;
-        display: flex;
-        justify-content: space-between;
-        height: 250px;
+        display: block;
+        float: left;
+        height: auto;
+        margin: $space-default auto;
         padding: 1rem 0;
         width: 100%;
     }
@@ -18,14 +28,22 @@
         color: $color-02;
         display: block;
         margin: $space-default auto;
-        width: 30%;
+        text-align: center;
+        width: calc(99% / 3 - 15px);
+
+        @media (max-width: $tablet ){
+            width: calc(99% - 30px);
+        }
         
         
         .img-container {
             display: block;
-            height: 200px;
+            height: 15rem;
             overflow: hidden;
             width: 100%;
+            @media (max-width: $tablet) {
+                height: 20rem;
+            }
         }
 
         p {

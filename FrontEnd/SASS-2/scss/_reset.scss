@@ -15,10 +15,13 @@ p {
     display: block;
 }
 
+article,
 header,
 section,
 footer {
+    color: $color-04;
     display: block;
+    float: left;
     margin: 0 auto;
     width: 100%;
     padding: 4rem 0;
@@ -31,13 +34,12 @@ section{
 .container {
     margin: 0 auto;
     max-width: 1200px;
-}
-
-@media (max-width: 1199px) {
-    .container {
+    
+    @media (max-width: 1199px) {
         max-width: math.div(300, 100%) * 100%;
     }
 }
+
 
 img {
     width: 100%;
@@ -85,5 +87,3 @@ footer p{
 footer {
     margin-top: $mb;
 }
-
-// comentario para remover depois que adicionar no github
