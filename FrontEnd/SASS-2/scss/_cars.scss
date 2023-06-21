@@ -6,14 +6,11 @@
 
 .cars {
     @extend %blocks;
-    h2 {
+    &__title {
         color: $color-02;
     }
-    .destack {
-        @include theme;
-       
-    }
-    li {
+    
+    &__item {
         @include theme;
         color: $color-02;
         display: flex;
@@ -22,8 +19,11 @@
         justify-content: center;
         align-items: baseline;
         flex-flow: column;
-
-        a {
+        
+        &__destack{
+            @include theme;  
+        }
+        &__button {
             background-color: $color-default; 
             &:hover{
                 color: $color-04;
