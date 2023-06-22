@@ -5,31 +5,34 @@
 }
 
 .cars {
-    @extend %blocks;
-    &__title {
-        color: $color-02;
-    }
     
-    &__item {
-        @include theme;
-        color: $color-02;
-        display: flex;
-        float: left;
-        height: max-content;
-        justify-content: center;
-        align-items: baseline;
-        flex-flow: column;
         
-        &__destack{
-            @include theme;  
+        
+        &__title {
+            color: $color-02;
         }
-        &__button {
-            background-color: $color-default; 
-            &:hover{
-                color: $color-04;
-                background-color: $color-01;
+        
+        &__item {
+            @include theme;
+            color: $color-02;
+            display: flex;
+            float: left;
+            height: max-content;
+            justify-content: center;
+            align-items: baseline;
+            flex-flow: column;
+            
+            &__destack{
+                @include theme;  
             }
+            &__button {
+                background-color: $color-default; 
+                
+            }
+            a:hover{
+                color: $color-04;
+                background-color: $color-02;
+            }
+            
         }
-        
     }
-}

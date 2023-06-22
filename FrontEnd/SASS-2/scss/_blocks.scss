@@ -1,18 +1,22 @@
-%blocks {
+.blocks {
     
     /*
-    BEM CSS
-    - Block
-    - Element
-    - Modifier
+        BEM CSS
+        - Block
+        - Element
+        - Modifier
+        
+        - Padrão de projeto / Design Paterns
     
-    - Padrão de projeto / Design Paterns
-    
-    Exemplo: .cars__title
-    Exemplo: .cars__list
-    Exemplo: .cars__item
-    Exemplo: .cars__button
-    Exemplo: .cars__img-container
+        Exemplo: 
+        .cars__title
+        .cars__list
+        .cars__item
+        .cars__item--destack
+        .cars__button
+        .cars__img-container
+
+        ".b__elemeto--modificador"
     */
     
     
@@ -66,7 +70,7 @@
     &__button {
         background-color: $color-01;
         border-radius: 5px;
-        color: white;
+        color: $color-02;
         display: block;
         font-size: $font-medium;
         margin: $mt-02 auto $mb;
