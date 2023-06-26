@@ -66,6 +66,15 @@
             
         }
         
+        &__description{
+            color: $color-default;
+            font-size: $font-normal;
+
+            &--destack{
+                color: $color-02;
+                padding: $space-default;
+            }
+        }
     }   
     &__button {
         background-color: $color-01;
