@@ -1,5 +1,7 @@
 import './styles.scss'
 
+import img from './matrix.png'
+
 
 function titleCompontent(){
     const elemH1 = document.createElement('h1')
@@ -8,4 +10,11 @@ function titleCompontent(){
     return elemH1
 }
 
+function imageComponent(){
+    const elemImg = new image(1200,800)
+    elemImg.src = img
+    return elemImg
+}
+
 document.body.appendChild(titleCompontent())
+document.body.appendChild(imageComponent())
