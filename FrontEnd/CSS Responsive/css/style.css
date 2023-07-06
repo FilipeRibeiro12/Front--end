@@ -125,6 +125,7 @@ header .container .hero {
   height: 45rem;
   display: flex;
   padding-bottom: 4rem;
+  overflow: hidden;
   width: 100%; 
 }
 
@@ -154,7 +155,7 @@ header .container .hero h1 {
   
 /* cor do fundo do catalago */
 #produtos {
-  background-color:  #459c98;
+  background-color:  rgb(252, 252, 252);
 }
   
 .vitrine {
@@ -239,7 +240,7 @@ header .container .hero h1 {
     
   .steps__item {
     margin: 1rem;
-    width: calc(80% / 5 - 1rem);
+   /* width: calc(80% / 5 - 1rem); */
     text-align: center;
   }
     
@@ -253,19 +254,55 @@ footer p {
 }
 
   /* Responsive Style */
-  @media (max-width: 768px) {
 
-    .container {
-      max-width: 100%;
-    }
-    .vitrine{
-      display: flex;
-    }
-  }
+  .col-1 {width: 8.33%}
+  .col-2 {width: calc(8.33% * 2)}
+  .col-3 {width: calc(8.33% * 3)}
+  .col-4 {width: calc(8.33% * 4)}
+  .col-5 {width: calc(8.33% * 5)}
+  .col-6 {width: calc(8.33% * 6)}
+  .col-7 {width: calc(8.33% * 7)}
+  .col-8 {width: calc(8.33% * 8)}
+  .col-9 {width: calc(8.33% * 9)}
+  .col-10{width: calc(8.33% * 10)}
+  .col-11{width: calc(8.33% * 11)}
+  .col-12{width: calc(8.33% * 12)}
 
-  @media (min-width: 1024px){
-      .container {
-        background-color: #459c98;
-      }
+@media (max-width: 767px){
+  [class*= "col-"]{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-    
+  .container{
+    width: 100%;
+  }
+  .vitrine {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+}
+  .vitrine__image {
+    width: 50%;
+    align-self: center;
+ }
+
+ .steps__item {
+  width: 100%;
+ }
+
+ #balao{
+  width: 230%;
+  margin-left: -60%;
+  position: relative;
+  max-width: none;
+  margin-right: -68%;
+  margin-top: 90px;
+
+ }
+}
+
+@media (min-width: 768px){
+  .steps__item{
+    width: 16%;
+  }
+}
