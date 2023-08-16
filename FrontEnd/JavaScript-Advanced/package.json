@@ -1,0 +1,15 @@
+{
+  "name": "javascript-advanced",
+  "version": "1.0.0",
+  "description": "- Formula / Molde dinânmico\r - Coleção de propriedades (atributos)\r - Associáveis (Chave / Valor)\r - Relação com objetos da vida real\r - Atributos: cor, forma, material, peso, identificação, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
